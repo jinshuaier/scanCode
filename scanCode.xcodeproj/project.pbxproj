@@ -15,6 +15,7 @@
 		B93578E71F4538E900238F0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B93578E51F4538E900238F0B /* LaunchScreen.storyboard */; };
 		B93578F21F4538E900238F0B /* scanCodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B93578F11F4538E900238F0B /* scanCodeTests.m */; };
 		B93578FD1F4538E900238F0B /* scanCodeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B93578FC1F4538E900238F0B /* scanCodeUITests.m */; };
+		B935790C1F453D0400238F0B /* HggScanCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B935790B1F453D0400238F0B /* HggScanCodeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		B93578F81F4538E900238F0B /* scanCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = scanCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B93578FC1F4538E900238F0B /* scanCodeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = scanCodeUITests.m; sourceTree = "<group>"; };
 		B93578FE1F4538E900238F0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B935790A1F453D0400238F0B /* HggScanCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HggScanCodeViewController.h; sourceTree = "<group>"; };
+		B935790B1F453D0400238F0B /* HggScanCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HggScanCodeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				B93578DB1F4538E900238F0B /* AppDelegate.m */,
 				B93578DD1F4538E900238F0B /* ViewController.h */,
 				B93578DE1F4538E900238F0B /* ViewController.m */,
+				B935790A1F453D0400238F0B /* HggScanCodeViewController.h */,
+				B935790B1F453D0400238F0B /* HggScanCodeViewController.m */,
 				B93578E01F4538E900238F0B /* Main.storyboard */,
 				B93578E31F4538E900238F0B /* Assets.xcassets */,
 				B93578E51F4538E900238F0B /* LaunchScreen.storyboard */,
@@ -207,6 +212,7 @@
 				TargetAttributes = {
 					B93578D31F4538E900238F0B = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 7JA4K7EDZ7;
 						ProvisioningStyle = Automatic;
 					};
 					B93578EC1F4538E900238F0B = {
@@ -276,6 +282,7 @@
 				B93578DF1F4538E900238F0B /* ViewController.m in Sources */,
 				B93578DC1F4538E900238F0B /* AppDelegate.m in Sources */,
 				B93578D91F4538E900238F0B /* main.m in Sources */,
+				B935790C1F453D0400238F0B /* HggScanCodeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,10 +431,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7JA4K7EDZ7;
 				INFOPLIST_FILE = scanCode/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hgg.scanCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -435,10 +445,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7JA4K7EDZ7;
 				INFOPLIST_FILE = scanCode/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hgg.scanCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -507,6 +520,7 @@
 				B93579031F4538E900238F0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B93579041F4538E900238F0B /* Build configuration list for PBXNativeTarget "scanCodeTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +529,7 @@
 				B93579061F4538E900238F0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B93579071F4538E900238F0B /* Build configuration list for PBXNativeTarget "scanCodeUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +538,7 @@
 				B93579091F4538E900238F0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
